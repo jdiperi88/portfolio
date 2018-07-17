@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/main.css';
 import Header from './Header'
+import Home from './Home'
 import { BrowserRouter as Router} from 'react-router-dom'
 class App extends Component {
   state ={
@@ -34,6 +35,7 @@ class App extends Component {
           openNav={this.openNav}
           closeNav={this.closeNav}
         />
+        <Home />
       </div>
       </Router>
     );
