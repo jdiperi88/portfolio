@@ -4,9 +4,13 @@ class Header extends Component {
 
 
     render(){
-        let {navIsOpen, active,openNav, closeNav} = this.props
+        let {
+            navIsOpen, 
+            active,openNav, 
+            closeNav} 
+            = this.props
         return(
-                <div className="flex navbar">
+                <header className="flex navbar">
                     <div className="row walmart-box">
                         <a href="//walmart.com" target="_blank" className="walmart"></a>
                     </div>
@@ -36,7 +40,7 @@ class Header extends Component {
                     </div>
                     {/* <div className='dropdown-overlay'>
                     </div> */}
-                </div>
+                </header>
                 
         )
     } 
