@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/main.css';
 import Header from './Header'
+import Footer from './Footer'
 import Home from './Home'
-import { BrowserRouter as Router} from 'react-router-dom'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 class App extends Component {
   state ={
     navIsOpen:'',
@@ -35,7 +36,8 @@ class App extends Component {
           openNav={this.openNav}
           closeNav={this.closeNav}
         />
-        <Home />
+        <Route exact to='/' component={Home} />
+        <Footer />
       </div>
       </Router>
     );
