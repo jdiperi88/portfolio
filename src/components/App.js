@@ -4,6 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Home from './Home'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
+import ProjectContainer from './ProjectContainer';
 class App extends Component {
   state ={
     navIsOpen:'',
@@ -36,7 +37,8 @@ class App extends Component {
           openNav={this.openNav}
           closeNav={this.closeNav}
         />
-        <Route exact to='/' component={Home} />
+        {/* <Route exact to='/test' component={Home} /> */}
+        <Route exact to='/' component={ProjectContainer} />
         <Footer />
       </div>
       </Router>

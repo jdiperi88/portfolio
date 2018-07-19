@@ -1,0 +1,7 @@
+[{"id": "Legend of DBZ",
+"github_link": "https://github.com/jdiperi88/Legend_Of_DBZ",
+"deployed_link":"https://jdiperi88.github.io/Legend_Of_DBZ/",
+"description" : "Legend of DBZ is a multiplayer fighting game that utilizes local storage to pass user information between three html pages. There is a character selection page that allows users to chooce from 8 fighters and then they can proceed to  select from 4 stages. The fight page uses collision detection to decrement the life bar and inform the winner.",
+"technologies_used": "Technologies used: Express, Fetch, PSQL, EJS, Authentication, Bcrypt, Javascript, CSS, HTML.",
+"image": "dbz.png" 
+}]
