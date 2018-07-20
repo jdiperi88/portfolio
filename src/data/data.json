@@ -1,7 +1,45 @@
-[{"id": "Legend of DBZ",
+[
+{"id": "Would You Rather ??",
+"github_link": "https://github.com/jdiperi88/would-you-rather",
+"deployed_link":"https://would-you-rather.netlify.com/",
+"description" : "Udacity Project",
+"technologies_used": "Technologies used: React, Redux, Sass, Netlify, Redux-thunk, Javascript, CSS, HTML.",
+"image": "wouldYouRather.png" 
+},
+{"id": "My Reads",
+"github_link": "https://github.com/jdiperi88/MyReads",
+"deployed_link":"https://myreads88.netlify.com/",
+"description" : "Udacity",
+"technologies_used": "Technologies used: React, Javascript, CSS, HTML.",
+"image": "myreads.png" 
+},
+{"id": "TOP FACT",
+"github_link": "https://github.com/jdiperi88/trivia",
+"deployed_link":"https://enigmatic-coast-60319.herokuapp.com/",
+"description" : "Built using express in the backend and the EJS template engine in the frontend, Top Fact is an application that connects to the open trivia API. It allows users to register and create their own customized trivia game. Their game is saved in five PSQL tables where they can re-render it at anytime.",
+"technologies_used": "Technologies used: Express, Fetch, PSQL, EJS, Authentication, Bcrypt, Javascript, CSS, HTML.",
+"image": "topfact.png" 
+},
+{"id": "Legend of DBZ",
 "github_link": "https://github.com/jdiperi88/Legend_Of_DBZ",
 "deployed_link":"https://jdiperi88.github.io/Legend_Of_DBZ/",
 "description" : "Legend of DBZ is a multiplayer fighting game that utilizes local storage to pass user information between three html pages. There is a character selection page that allows users to chooce from 8 fighters and then they can proceed to  select from 4 stages. The fight page uses collision detection to decrement the life bar and inform the winner.",
-"technologies_used": "Technologies used: Express, Fetch, PSQL, EJS, Authentication, Bcrypt, Javascript, CSS, HTML.",
+"technologies_used": " Technologies used: Javascript, HTML, and CSS.",
 "image": "dbz.png" 
-}]
+},
+{"id": "News Press",
+"github_link": "https://github.com/gumosun/newspress",
+"deployed_link":"https://obscure-escarpment-46521.herokuapp.com/",
+"description" : "Built using express in the backend and react in the frontend, News Press is an application giving users the ability to centralize their favorite news. Users are able to sign up and save their favorite news sources in a PSQL database.",
+"technologies_used": "Technologies used: React, Express, Heroku, Axios, PSQL, Authentication, Passport, Bcrypt, Javascript, CSS, HTML.",
+"image": "newspress.png" 
+},
+{"id": "My Agenda",
+    "github_link": "https://github.com/jdiperi88/MyAgenda",
+    "deployed_link":"https://myagenda8.herokuapp.com/",
+    "description" : "Built using rails in the backend and the ERB template engine for server side rendering, My Agenda is an application giving users the ability to create tasks to manage their time more efficiently. Users are able to sign up and save their tasks to their profile, and have full CRUD functionality to modify those tasks.",
+    "technologies_used": "Technologies used: Rails, ERB, Heroku, Active Record, PSQL, Bcrypt, Ruby, Bootstrap, CSS, HTML.",
+    "image": "myagenda.png" 
+}
+
+]

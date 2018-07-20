@@ -22,7 +22,7 @@ class Project extends Component {
                     />
                     <p>{description}</p>
                     <p>{technologies_used}</p>
-                    <a href={github_link} target='_blank'><img src={require('../images/git.png')} /></a>
+                    <a href={github_link} target='_blank'><img className='project-git' src={require('../images/git.png')} /></a>
                     
                 </div>
                 
