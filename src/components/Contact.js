@@ -30,7 +30,6 @@ class Contact extends Component {
                             </div>
                             <textarea placeholder='Message' rows="10" cols="50" required />
                         </div>
-                        <div data-netlify-recaptcha></div>
                         <button className='btn' type='submit'>Submit</button>
                     </form>
                 </section>
