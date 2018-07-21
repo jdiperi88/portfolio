@@ -16,7 +16,8 @@ class Contact extends Component {
                     <div className='contact-photo'>
                         <img src={require('../images/keyboard.jpg')}/>
                     </div>
-                    <form name="contact" method="POST" netlify>
+                    <form name="contact" method="POST">
+                        <input type="hidden" name="form-name" value="contact" />
                         <h1>CONTACT</h1>
                         <div className='field-container'>
                             <div className='row'>

@@ -21,9 +21,25 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Joseph DiPeri</title>
   </head>
   <body>
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+          <h1>CONTACT</h1>
+          <div className='field-container'>
+              <div className='row'>
+                  <input type='text' name='name' placeholder='Name' required />
+                  <input type='text' name='company' placeholder='Company' />
+              </div>
+              <div className='row'>
+                  <input type='email' name='email' placeholder='Email' required />
+                  <input type='text' name='subject' placeholder='Subject' required />
+              </div>
+              <textarea placeholder='Message' rows="10" cols="50" required />
+          </div>
+          <div data-netlify-recaptcha></div>
+          <button className='btn' type='submit'>Submit</button>
+      </form>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
