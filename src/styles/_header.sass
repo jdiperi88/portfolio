@@ -1,16 +1,15 @@
 //HEADER
 header
     height: 10vh
-    display: flex
     background: rgba(0, 0, 0, 0.5)
     position: fixed
     z-index: 100
     width: 100%
-    justify-content: flex-end
 #nav-icon 
     width: 100px
     height: 100%
-    position: relative
+    position: absolute
+    right: 0
     -webkit-transform: rotate(0deg)
     -moz-transform: rotate(0deg)
     -o-transform: rotate(0deg)
@@ -91,7 +90,7 @@ header
     justify-content: center
 
 .nav-menu
-    width: 30vw
+    width: 100vw
     position: absolute
     top: 100%
     right: 0%
@@ -100,21 +99,23 @@ header
     z-index: 1001
     border: solid white
     display: none
+    font-size: 1.3rem
     & > a
         width: 100%
         & li 
-            border-bottom: solid white
             padding: 2.5%
             text-align: center
             color: white
             text-transform: uppercase
             list-style-type: none
+    & > a:not(:last-child)
+            li
+                border-bottom: solid white
+
             // &:not(:last-child)
             //     border-bottom: solid white
             // 
         
-        & 
-            border-bottom: none
         
     
 

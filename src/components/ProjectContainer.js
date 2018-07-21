@@ -40,7 +40,8 @@ class ProjectContainer extends Component {
     handleFilterChange = (filter) =>{
         this.setState({
             filter,
-            display: 'hide'
+            display: 'hide',
+            selectedFilter: ''
         })
     }
     handleDisplayChange = () =>{
@@ -77,7 +78,7 @@ class ProjectContainer extends Component {
                                 {filter == 'none' ?'Select Project Type' : filter }
                             </button>
                             <div className={`dropdown-container ${display}`}>
-                                <div onClick={()=>this.handleFilterChange('all Projects')}>All Projects</div>
+                                <div onClick={()=>this.handleFilterChange('all projects')}>All Projects</div>
                                 <div onClick={()=>this.handleFilterChange('languages')}>Languages</div>
                                 <div onClick={()=>this.handleFilterChange('frameworks/libraries')}>Frameworks/Libraries</div>
                                 <div onClick={()=>this.handleFilterChange('deployment')}>Deployment</div>
@@ -109,8 +110,9 @@ class ProjectContainer extends Component {
                         {data.map((item,i) =>{
                             const { id, image, description, technologies_used, deployed_link, github_link } = item
                             var lowerTech = technologies_used.toLowerCase()
+                            console.log(lowerTech.indexOf(selectedFilter)> -1)
                             return (
-                                lowerTech.indexOf(selectedFilter)> -1 &&
+                                (lowerTech.indexOf(selectedFilter)> -1) && 
                                 <Project
                                     key={`${i}yankees`}
                                     id={id}
