@@ -3,20 +3,54 @@ import {Link} from 'react-router-dom'
 import Project from './Project';
 import Carousel from './Carousel';
 import data from '../data/data.json'
+
+// function SamplePrevArrow(props) {
+//     const { className, style, onClick } = props;
+//     let left = require('../images/left-arrow.png'),
+//     leftUrl = `url(${left}`
+//     return (
+//       <div
+//         className={className}
+//         style={{ ...style, display: "block", background: leftUrl, width:'44px', height:"76px"}}
+//         onClick={onClick}
+//       />
+//     );
+//   }
+
+// function SampleNextArrow(props) {
+//     const { className, style, onClick } = props;
+//     let right = require('../images/right-arrow.png'),
+//         rightUrl = `url(${right}`
+
+//     return (
+
+//       <div
+//         className={className}
+//         style={{ ...style, display: "block", background: rightUrl, width:'44px', height:"76px"}}
+//         onClick={onClick}
+//       />
+//     );
+//   }
 class ProjectContainer extends Component {
     state = {
         filter: 'none',
-        status: 'hide'
+        display: 'hide',
+        selectedFilter: ''
     }
     handleFilterChange = (filter) =>{
         this.setState({
             filter,
-            status: 'hide'
+            display: 'hide'
         })
     }
-    handleStatusChange = () =>{
+    handleDisplayChange = () =>{
         this.setState({
-            status: 'show'
+            display: 'show'
+        })
+    }
+    handleSelectedFilterChange = (selectedFilter) =>{
+        this.setState({
+            selectedFilter
         })
     }
 
@@ -26,7 +60,8 @@ class ProjectContainer extends Component {
             = this.props
             let {
                 filter,
-                status
+                display,
+                selectedFilter
             } = this.state
         return(
                 <section id='project' >
@@ -37,23 +72,24 @@ class ProjectContainer extends Component {
                         <div className='project-type-container'>
                             <button 
                                 className='btn'
-                                onClick={()=>this.handleStatusChange()}
+                                onClick={()=>this.handleDisplayChange()}
                             >
                                 {filter == 'none' ?'Select Project Type' : filter }
                             </button>
-                            <div className={`dropdown-container ${status}`}>
-                                <div onClick={()=>this.handleFilterChange('All Projects')}>All Projects</div>
-                                <div onClick={()=>this.handleFilterChange('Language')}>Language</div>
-                                <div onClick={()=>this.handleFilterChange('Library')}>Library</div>
-                                <div onClick={()=>this.handleFilterChange('Deployment')}>Deployment</div>
+                            <div className={`dropdown-container ${display}`}>
+                                <div onClick={()=>this.handleFilterChange('all Projects')}>All Projects</div>
+                                <div onClick={()=>this.handleFilterChange('languages')}>Languages</div>
+                                <div onClick={()=>this.handleFilterChange('frameworks/libraries')}>Frameworks/Libraries</div>
+                                <div onClick={()=>this.handleFilterChange('deployment')}>Deployment</div>
                             </div>
                         </div>
                         <Carousel 
                             settings = {{
-                                dots: true,
+                                dots: false,
                                 infinite: true,
                                 speed: 500,
-                                slidesToShow: 2,
+                                slidesToShow: 3,
+
                                 // responsive: [
                                 //     {
                                 //       breakpoint: 640,
@@ -61,14 +97,22 @@ class ProjectContainer extends Component {
                                 //         slidesToShow: 1,
                                 //       }
                                 //     }]
-                            }} 
+                            }}
+                            languages = {['ruby', 'html','css']}
+                            libraries = {['rails','react','redux', 'node-js']}
+                            deployment = {['aws','heroku','netlify']}
+                            filter={filter}
+                            handleSelectedFilterChange={this.handleSelectedFilterChange}
                         
                         />
 
-                        {data.map(item =>{
+                        {data.map((item,i) =>{
                             const { id, image, description, technologies_used, deployed_link, github_link } = item
+                            var lowerTech = technologies_used.toLowerCase()
                             return (
+                                lowerTech.indexOf(selectedFilter)> -1 &&
                                 <Project
+                                    key={`${i}yankees`}
                                     id={id}
                                     image ={image}
                                     description={description}
@@ -76,6 +120,7 @@ class ProjectContainer extends Component {
                                     deployed_link={deployed_link}
                                     github_link={github_link}
                                 />
+                                
                             )
                         })}
 

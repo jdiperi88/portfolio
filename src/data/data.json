@@ -10,14 +10,14 @@
 "github_link": "https://github.com/jdiperi88/MyReads",
 "deployed_link":"https://myreads88.netlify.com/",
 "description" : "Udacity",
-"technologies_used": "Technologies used: React, Javascript, CSS, HTML.",
+"technologies_used": "Technologies used: React,Netlify, Javascript, CSS, HTML.",
 "image": "myreads.png"
 },
 {"id": "TOP FACT",
 "github_link": "https://github.com/jdiperi88/trivia",
 "deployed_link":"https://enigmatic-coast-60319.herokuapp.com/",
 "description" : "Built using express in the backend and the EJS template engine in the frontend, Top Fact is an application that connects to the open trivia API. It allows users to register and create their own customized trivia game. Their game is saved in five PSQL tables where they can re-render it at anytime.",
-"technologies_used": "Technologies used: Express, Fetch, PSQL, EJS, Authentication, Bcrypt, Javascript, CSS, HTML.",
+"technologies_used": "Technologies used: Node-js,Express, Fetch, PSQL, EJS, Authentication, Bcrypt, Javascript, CSS, HTML.",
 "image": "topfact.png"
 },
 {"id": "Legend of DBZ",

@@ -5,7 +5,8 @@
         background: url('../images/projectBackground.jpg')
         flex: 1
         background-size: cover
-        min-height: 100vh
+        min-height: 99vh
+        padding: 10px 0
         width: 50vw
         left: 0
         position: fixed
@@ -25,8 +26,24 @@
         max-width: 50vw
         margin-top: 150px
         .carousel-container
+            text-align: center
             img
-                width: 100px
+                width: 100px !important
+                cursor: pointer
+            .slick-prev
+                left: 0
+                z-index: 100
+                background: black
+                margin-left: 5px
+                transform: translate(50%,0)
+                border-radius: 10px
+            .slick-next
+                right: 0
+                z-index: 100
+                background: black
+                transform: translate(-100%,0)
+                margin-right: 5px
+                border-radius: 10px
         .dropdown-container
             border:  1px solid black
             width: 50%
