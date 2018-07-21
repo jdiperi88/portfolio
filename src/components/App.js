@@ -5,6 +5,7 @@ import Footer from './Footer'
 import Home from './Home'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import ProjectContainer from './ProjectContainer';
+import Carousel from './Carousel';
 class App extends Component {
   state ={
     navIsOpen:'',
