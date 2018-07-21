@@ -13,8 +13,8 @@ class Home extends Component {
                     <img src ={require('../images/logo.png')} />
                 </div>
                 <div className='row'>
-                    <div className='flex-image-container'>
-                        <div className='full-stack-image'></div>
+                    <div className='flex-image-container mobile-hide'>
+                    <img src={require('../images/fullStacksideways.png')} />
                     </div>
                     <div class="aboutColumn">
                         <h1>JOSEPH DIPERI</h1>
@@ -43,7 +43,7 @@ class Home extends Component {
                         </div>    
                     </div>
                     <div className='flex-image-container'>
-                        <img src={require('../images/jdiperi.jpg')} />
+                        <img src={require('../images/jdiperi.png')} />
                     </div>
                 </div>
             </section>

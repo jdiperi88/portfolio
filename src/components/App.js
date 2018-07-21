@@ -3,7 +3,7 @@ import '../styles/main.css';
 import Header from './Header'
 import Footer from './Footer'
 import Home from './Home'
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import ProjectContainer from './ProjectContainer';
 import Carousel from './Carousel';
 class App extends Component {
@@ -38,8 +38,10 @@ class App extends Component {
           openNav={this.openNav}
           closeNav={this.closeNav}
         />
-        {/* <Route exact to='/test' component={Home} /> */}
-        <Route exact to='/' component={ProjectContainer} />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/Projects' component={ProjectContainer} />
+      </Switch>
         <Footer />
       </div>
       </Router>

@@ -23,11 +23,9 @@ class Header extends Component {
                         </div>
                     </div>
                     <div className={`nav-menu  ${active}`}>
-                        <Link  to="/"><li onClick={()=>closeNav()} >Home</li></Link>
-                        <Link  to="/About"><li onClick={()=>closeNav()}>Great outdoors</li></Link>
-                        <Link  to="/casual-cookouts"><li onClick={()=>closeNav()}>casual cookouts</li></Link>
-                        <Link  to="/backyard-blasts"><li onClick={()=>closeNav()}>backyard blasts</li></Link>
-                        <Link  to="/badge-builder"><li onClick={()=>closeNav()}>badge builder</li></Link>
+                        <Link  to="/"><li onClick={()=>closeNav()} >About</li></Link>
+                        <Link  to="/Projects"><li onClick={()=>closeNav()}>Projects</li></Link>
+                        <Link  to="/Contact"><li onClick={()=>closeNav()}>Contact</li></Link>
 
                     </div>
                 </header>
