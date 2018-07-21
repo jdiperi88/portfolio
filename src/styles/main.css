@@ -376,14 +376,17 @@ header {
   z-index: 1001;
   border: solid white;
   display: none;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  cursor: pointer; }
   .nav-menu > a {
+    cursor: pointer;
     width: 100%; }
     .nav-menu > a li {
-      padding: 2.5%;
+      padding: 20px;
       text-align: center;
       color: white;
       text-transform: uppercase;
+      cursor: pointer;
       list-style-type: none; }
   .nav-menu > a:not(:last-child) li {
     border-bottom: solid white; }
@@ -402,6 +405,40 @@ footer {
     color: white;
     text-align: center;
     font-family: EnterTheGrid; }
+
+#contact {
+  display: flex; }
+  #contact img {
+    width: 50vw; }
+  #contact form {
+    width: 50vw; }
+    #contact form h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 125px; }
+    #contact form .field-container {
+      text-align: center;
+      width: 80%;
+      display: block;
+      margin: 0 auto; }
+    #contact form .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      width: 100%; }
+      #contact form .row input {
+        width: 45%;
+        padding: 10px;
+        font-size: 1rem; }
+    #contact form textarea {
+      width: 96%;
+      font-size: 1rem;
+      padding: 10px; }
+  #contact .btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer; }
 
 #project {
   display: flex;

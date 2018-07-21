@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/main.css';
 import Header from './Header'
 import Footer from './Footer'
+import Contact from './Contact'
 import Home from './Home'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import ProjectContainer from './ProjectContainer';
@@ -41,6 +42,7 @@ class App extends Component {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/Projects' component={ProjectContainer} />
+        <Route exact path='/Contact' component={Contact} />
       </Switch>
         <Footer />
       </div>
