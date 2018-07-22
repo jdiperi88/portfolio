@@ -16,14 +16,14 @@
 {"id": "Would You Rather ??",
 "github_link": "https://github.com/jdiperi88/would-you-rather",
 "deployed_link":"https://would-you-rather.netlify.com/",
-"description" : "Udacity Project",
+"description" : "Would You Rather is a react redux application that allows users to create, answer, and vote on questions that were created by the applications users. A user has to be logged in to use the application, and a mock auth system was created to do this. <br/><br/> A user can then create a question that will ask if they would rather do one of two options. After this they may vote on their own questions or questions created by other users which will then move that question into their answer category. Once answered they will receive a point and if they click on the question it will show the percentage of votes each answer received by the global user community. Users can also view where they stand on the leaderboard pointwise as users receive points for each question created and each question answered.",
 "technologies_used": "Technologies used: React, Redux, Sass, Netlify, Redux-thunk, Javascript, CSS, HTML.",
 "image": "wouldYouRather.png"
 },
 {"id": "My Reads",
 "github_link": "https://github.com/jdiperi88/MyReads",
 "deployed_link":"https://myreads88.netlify.com/",
-"description" : "Udacity",
+"description" : "My Reads is a react book tracker that has two main components, a dynamic Status component along with a search component. The search component allowed users to search through the database to find available books and they can choose to filter those into the right tracker category if they have any interest through a select drop down menu",
 "technologies_used": "Technologies used: React Netlify, Javascript, CSS, HTML.",
 "image": "myreads.png"
 },
