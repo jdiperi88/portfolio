@@ -30,7 +30,7 @@
 {"id": "Portfolio",
     "github_link": "https://github.com/jdiperi88/portfolio",
     "deployed_link":"jdiperi.com",
-    "description" : "Remade this portfolio in react to make adding projects easier. I created a project component along with a external json file that contains all the project data. I map over this json file and drop all the necessary props into the project component to ease updating the projects page. I also take advantage of netlifys form submission ability to keep this a strictly static site.",
+    "description" : "Remade this portfolio in react to make adding projects easier. I created a project component along with an external json file that contains all the project data. I map over this json data and drop all the necessary props into the project component to ease updating the projects page. I also take advantage of netlifys form submission ability to keep this a strictly static site.",
     "technologies_used": "Technologies used: React, Sass, Netlify, Javascript, CSS, HTML.",
     "image": "portfolio.png"
     },
