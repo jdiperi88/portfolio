@@ -37,7 +37,7 @@ class Home extends Component {
                             <a href="https://github.com/jdiperi88" target="_blank">
                                 <img src={require('../images/git.png')} />
                             </a>
-                            <a target="_blank" href='Resume_Jdiperi.pdf' >
+                            <a target="_blank" href='jdiperi_resume.pdf' >
                             <img src={require('../images/resume.jpg')} />
                             </a>
                         </div>    

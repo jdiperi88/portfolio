@@ -1,4 +1,18 @@
 [
+{"id": "Master Your Summer",
+    "github_link": "",
+    "deployed_link":"masteryoursummer.com/",
+    "description" : "Developed using the microservices architecture technique, Master Your Summer was a campaign site that allowed users to view a variety of recipes provided by the client that were stored using MySQL in an RDS instance, as well as design their own badge that they could share on several social media outlets.</br></br> The badge builder leveraged an image processing npm package on the back-end called jimp. Jimp would take a string, a css hexcode, and multple pngs and compress them into one image that would be uploaded to an S3 bucket so users could download and share them with their friends.",
+    "technologies_used": "Technologies used: React,Node-js, Express, MySQL, Sass, AWS(Elastic Beanstalk,S3), Javascript, CSS, HTML.",
+    "image": "master_your_summer.png"
+    },
+    {"id": "Client Quiz",
+        "github_link": "",
+        "deployed_link":"",
+        "description" : "Developed using the microservices architecture technique, Client Quiz front-end was built in react and hosted in a S3 bucket while the API was hosted on Elastic beanstalk and created in Express.</br></br> Client Quiz was an instore web application that allowed users to answer a variety of questions and based on their score, the application would a recommend a product.<br/><br/> The application required a lot of custom validation to check if a user is old enough, and that they answered every question before they could proceed to the next question. Data was stored in the MySQL database.",
+        "technologies_used": "Technologies used: React,Node-js, Express, MySQL, Sass, AWS(Elastic Beanstalk,S3), Javascript, CSS, HTML.",
+        "image": "client_quiz.png"
+        },
 {"id": "Would You Rather ??",
 "github_link": "https://github.com/jdiperi88/would-you-rather",
 "deployed_link":"https://would-you-rather.netlify.com/",

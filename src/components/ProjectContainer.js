@@ -99,7 +99,7 @@ class ProjectContainer extends Component {
                                 //       }
                                 //     }]
                             }}
-                            languages = {['ruby', 'html','css']}
+                            languages = {['ruby','sql', 'js','html','css']}
                             libraries = {['rails','react','redux', 'node-js']}
                             deployment = {['aws','heroku','netlify']}
                             filter={filter}

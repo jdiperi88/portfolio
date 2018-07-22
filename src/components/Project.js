@@ -16,13 +16,15 @@ class Project extends Component {
             = this.props
         return(
                 <div className='project-container'>
-                    <a href={deployed_link} target='_blank'><h1>{id}</h1></a>
+                    {deployed_link ? <a href={deployed_link} target='_blank'><h1>{id}</h1></a> : <h1>{id}</h1> }
                     <img 
                         src={require(`../images/${image}`)}
                     />
-                    <p>{description}</p>
+                    <p dangerouslySetInnerHTML={{ __html: description}} />
                     <p>{technologies_used}</p>
-                    <a href={github_link} target='_blank'><img className='project-git' src={require('../images/git.png')} /></a>
+                    {github_link && 
+                        <a href={github_link} target='_blank'><img className='project-git' src={require('../images/git.png')} /></a>
+                    }
                     
                 </div>
                 
