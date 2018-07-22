@@ -10,8 +10,6 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,6 +22,21 @@
     <title>Joseph DiPeri</title>
   </head>
   <body>
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+          <h1>CONTACT</h1>
+          <div className='field-container'>
+              <div className='row'>
+                  <input type='text' name='name' placeholder='Name' required />
+                  <input type='text' name='company' placeholder='Company' />
+              </div>
+              <div className='row'>
+                  <input type='email' name='email' placeholder='Email' required />
+                  <input type='text' name='subject' placeholder='Subject' required />
+              </div>
+              <textarea placeholder='Message' rows="10" cols="50" required />
+          </div>
+          <button className='btn' type='submit'>Submit</button>
+      </form>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
