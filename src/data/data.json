@@ -1,8 +1,8 @@
 [
 	{
 		"id": "Mobile Flashcards",
-		"github_link": "https://github.com/jdiperi88/MyAgenda",
-		"deployed_link": "https://myagenda8.herokuapp.com/",
+		"github_link": "https://github.com/jdiperi88/mobile-flashcards",
+		"deployed_link": "",
 		"description": "Built using React Native, Mobile Flashcards allows users to save study decks into their native local storage on their mobile devices. Users are able to add an unlimited amount of cards and decks to their application. Each deck has quiz functionality to allow users to see how well they know their deck, and will receive a grade upon finishing it. </br></br> The decks are stored in local storage and synced up to the redux store. The redux store provides the additional quiz functionality. Users are also allowed to set daily notifications that remind them to study their flashcards everyday",
 		"technologies_used": "Technologies used: React Native, Redux, Javascript, AsyncLocalStorage, Expo, StyleSheet API",
 		"image": "mobile_flashcards.jpg"
