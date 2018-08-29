@@ -1,65 +1,82 @@
 [
-{"id": "Master Your Summer",
-    "github_link": "",
-    "deployed_link":"masteryoursummer.com/",
-    "description" : "Developed using the microservices architecture technique, Master Your Summer was a campaign site that allowed users to view a variety of recipes provided by the client that were stored using MySQL in an RDS instance, as well as design their own badge that they could share on several social media outlets.</br></br> The badge builder leveraged an image processing npm package on the back-end called jimp. Jimp would take a string, a css hexcode, and multple pngs and compress them into one image that would be uploaded to an S3 bucket so users could download and share them with their friends.",
-    "technologies_used": "Technologies used: React,Node-js, Express, MySQL, Sass, AWS(Elastic Beanstalk,S3), Javascript, CSS, HTML.",
-    "image": "master_your_summer.png"
-    },
-    {"id": "Client Quiz",
-        "github_link": "",
-        "deployed_link":"",
-        "description" : "Developed using the microservices architecture technique, Client Quiz front-end was built in react and hosted in a S3 bucket while the API was hosted on Elastic beanstalk and created in Express.</br></br> Client Quiz was an instore web application that allowed users to answer a variety of questions and based on their score, the application would a recommend a product.<br/><br/> The application required a lot of custom validation to check if a user is old enough, and that they answered every question before they could proceed to the next question. Data was stored in the MySQL database.",
-        "technologies_used": "Technologies used: React,Node-js, Express, MySQL, Sass, AWS(Elastic Beanstalk,S3), Javascript, CSS, HTML.",
-        "image": "client_quiz.png"
-        },
-{"id": "Would You Rather ??",
-"github_link": "https://github.com/jdiperi88/would-you-rather",
-"deployed_link":"https://would-you-rather.netlify.com/",
-"description" : "Would You Rather is a react redux application that allows users to create, answer, and vote on questions that were created by the applications users. A user has to be logged in to use the application, and a mock auth system was created to do this. <br/><br/> A user can then create a question that will ask if they would rather do one of two options. After this they may vote on their own questions or questions created by other users which will then move that question into their answer category. Once answered they will receive a point and if they click on the question it will show the percentage of votes each answer received by the global user community. Users can also view where they stand on the leaderboard pointwise as users receive points for each question created and each question answered.",
-"technologies_used": "Technologies used: React, Redux, Sass, Netlify, Redux-thunk, Javascript, CSS, HTML.",
-"image": "wouldYouRather.png"
-},
-{"id": "My Reads",
-"github_link": "https://github.com/jdiperi88/MyReads",
-"deployed_link":"https://myreads88.netlify.com/",
-"description" : "My Reads is a react book tracker that has two main components, a dynamic Status component along with a search component. The search component allowed users to search through the database to find available books and they can choose to filter those into the right tracker category if they have any interest through a select drop down menu",
-"technologies_used": "Technologies used: React Netlify, Javascript, CSS, HTML.",
-"image": "myreads.png"
-},
-{"id": "Portfolio",
-    "github_link": "https://github.com/jdiperi88/portfolio",
-    "deployed_link":"jdiperi.com",
-    "description" : "Remade this portfolio in react to make adding projects easier. I created a project component along with an external json file that contains all the project data. I map over this json data and drop all the necessary props into the project component to ease updating the projects page. I also take advantage of netlifys form submission ability to keep this a strictly static site.",
-    "technologies_used": "Technologies used: React, Sass, Netlify, Javascript, CSS, HTML.",
-    "image": "portfolio.png"
-    },
-{"id": "TOP FACT",
-"github_link": "https://github.com/jdiperi88/trivia",
-"deployed_link":"https://enigmatic-coast-60319.herokuapp.com/",
-"description" : "Built using express in the backend and the EJS template engine in the frontend, Top Fact is an application that connects to the open trivia API. It allows users to register and create their own customized trivia game. Their game is saved in five PSQL tables where they can re-render it at anytime.",
-"technologies_used": "Technologies used: Node-js,Express, Fetch, PSQL, EJS, Authentication, Bcrypt, Javascript, CSS, HTML.",
-"image": "topfact.png"
-},
-{"id": "Legend of DBZ",
-"github_link": "https://github.com/jdiperi88/Legend_Of_DBZ",
-"deployed_link":"https://jdiperi88.github.io/Legend_Of_DBZ/",
-"description" : "Legend of DBZ is a multiplayer fighting game that utilizes local storage to pass user information between three html pages. There is a character selection page that allows users to chooce from 8 fighters and then they can proceed to  select from 4 stages. The fight page uses collision detection to decrement the life bar and inform the winner.",
-"technologies_used": " Technologies used: Javascript, HTML, and CSS.",
-"image": "dbz.png"
-},
-{"id": "News Press",
-"github_link": "https://github.com/gumosun/newspress",
-"deployed_link":"https://obscure-escarpment-46521.herokuapp.com/",
-"description" : "Built using express in the backend and react in the frontend, News Press is an application giving users the ability to centralize their favorite news. Users are able to sign up and save their favorite news sources in a PSQL database.",
-"technologies_used": "Technologies used: React, Express, Heroku, Axios, PSQL, Authentication, Passport, Bcrypt, Javascript, CSS, HTML.",
-"image": "newspress.png"
-},
-{"id": "My Agenda",
-    "github_link": "https://github.com/jdiperi88/MyAgenda",
-    "deployed_link":"https://myagenda8.herokuapp.com/",
-    "description" : "Built using rails in the backend and the ERB template engine for server side rendering, My Agenda is an application giving users the ability to create tasks to manage their time more efficiently. Users are able to sign up and save their tasks to their profile, and have full CRUD functionality to modify those tasks.",
-    "technologies_used": "Technologies used: Rails, ERB, Heroku, Active Record, PSQL, Bcrypt, Ruby, Bootstrap, CSS, HTML.",
-    "image": "myagenda.png" 
-}
+	{
+		"id": "Mobile Flashcards",
+		"github_link": "https://github.com/jdiperi88/MyAgenda",
+		"deployed_link": "https://myagenda8.herokuapp.com/",
+		"description": "Built using React Native, Mobile Flashcards allows users to save study decks into their native local storage on their mobile devices. Users are able to add an unlimited amount of cards and decks to their application. Each deck has quiz functionality to allow users to see how well they know their deck, and will receive a grade upon finishing it. </br></br> The decks are stored in local storage and synced up to the redux store. The redux store provides the additional quiz functionality. Users are also allowed to set daily notifications that remind them to study their flashcards everyday",
+		"technologies_used": "Technologies used: React Native, Redux, Javascript, AsyncLocalStorage, Expo, StyleSheet API",
+		"image": "mobile_flashcards.jpg"
+	},
+	{
+		"id": "Master Your Summer",
+		"github_link": "",
+		"deployed_link": "masteryoursummer.com/",
+		"description": "Developed using the microservices architecture technique, Master Your Summer was a campaign site that allowed users to view a variety of recipes provided by the client that were stored using MySQL in an RDS instance, as well as design their own badge that they could share on several social media outlets.</br></br> The badge builder leveraged an image processing npm package on the back-end called jimp. Jimp would take a string, a css hexcode, and multple pngs and compress them into one image that would be uploaded to an S3 bucket so users could download and share them with their friends.",
+		"technologies_used": "Technologies used: React,Node-js, Express, MySQL, Sass, AWS(Elastic Beanstalk,S3), Javascript, CSS, HTML.",
+		"image": "master_your_summer.png"
+	},
+	{
+		"id": "Client Quiz",
+		"github_link": "",
+		"deployed_link": "",
+		"description": "Developed using the microservices architecture technique, Client Quiz front-end was built in react and hosted in a S3 bucket while the API was hosted on Elastic beanstalk and created in Express.</br></br> Client Quiz was an instore web application that allowed users to answer a variety of questions and based on their score, the application would a recommend a product.<br/><br/> The application required a lot of custom validation to check if a user is old enough, and that they answered every question before they could proceed to the next question. Data was stored in the MySQL database.",
+		"technologies_used": "Technologies used: React,Node-js, Express, MySQL, Sass, AWS(Elastic Beanstalk,S3), Javascript, CSS, HTML.",
+		"image": "client_quiz.png"
+	},
+	{
+		"id": "Would You Rather ??",
+		"github_link": "https://github.com/jdiperi88/would-you-rather",
+		"deployed_link": "https://would-you-rather.netlify.com/",
+		"description": "Would You Rather is a react redux application that allows users to create, answer, and vote on questions that were created by the applications users. A user has to be logged in to use the application, and a mock auth system was created to do this. <br/><br/> A user can then create a question that will ask if they would rather do one of two options. After this they may vote on their own questions or questions created by other users which will then move that question into their answer category. Once answered they will receive a point and if they click on the question it will show the percentage of votes each answer received by the global user community. Users can also view where they stand on the leaderboard pointwise as users receive points for each question created and each question answered.",
+		"technologies_used": "Technologies used: React, Redux, Sass, Netlify, Redux-thunk, Javascript, CSS, HTML.",
+		"image": "wouldYouRather.png"
+	},
+	{
+		"id": "My Reads",
+		"github_link": "https://github.com/jdiperi88/MyReads",
+		"deployed_link": "https://myreads88.netlify.com/",
+		"description": "My Reads is a react book tracker that has two main components, a dynamic Status component along with a search component. The search component allowed users to search through the database to find available books and they can choose to filter those into the right tracker category if they have any interest through a select drop down menu",
+		"technologies_used": "Technologies used: React Netlify, Javascript, CSS, HTML.",
+		"image": "myreads.png"
+	},
+	{
+		"id": "Portfolio",
+		"github_link": "https://github.com/jdiperi88/portfolio",
+		"deployed_link": "jdiperi.com",
+		"description": "Remade this portfolio in react to make adding projects easier. I created a project component along with an external json file that contains all the project data. I map over this json data and drop all the necessary props into the project component to ease updating the projects page. I also take advantage of netlifys form submission ability to keep this a strictly static site.",
+		"technologies_used": "Technologies used: React, Sass, Netlify, Javascript, CSS, HTML.",
+		"image": "portfolio.png"
+	},
+	{
+		"id": "TOP FACT",
+		"github_link": "https://github.com/jdiperi88/trivia",
+		"deployed_link": "https://enigmatic-coast-60319.herokuapp.com/",
+		"description": "Built using express in the backend and the EJS template engine in the frontend, Top Fact is an application that connects to the open trivia API. It allows users to register and create their own customized trivia game. Their game is saved in five PSQL tables where they can re-render it at anytime.",
+		"technologies_used": "Technologies used: Node-js,Express, Fetch, PSQL, EJS, Authentication, Bcrypt, Javascript, CSS, HTML.",
+		"image": "topfact.png"
+	},
+	{
+		"id": "Legend of DBZ",
+		"github_link": "https://github.com/jdiperi88/Legend_Of_DBZ",
+		"deployed_link": "https://jdiperi88.github.io/Legend_Of_DBZ/",
+		"description": "Legend of DBZ is a multiplayer fighting game that utilizes local storage to pass user information between three html pages. There is a character selection page that allows users to chooce from 8 fighters and then they can proceed to  select from 4 stages. The fight page uses collision detection to decrement the life bar and inform the winner.",
+		"technologies_used": " Technologies used: Javascript, HTML, and CSS.",
+		"image": "dbz.png"
+	},
+	{
+		"id": "News Press",
+		"github_link": "https://github.com/gumosun/newspress",
+		"deployed_link": "https://obscure-escarpment-46521.herokuapp.com/",
+		"description": "Built using express in the backend and react in the frontend, News Press is an application giving users the ability to centralize their favorite news. Users are able to sign up and save their favorite news sources in a PSQL database.",
+		"technologies_used": "Technologies used: React, Express, Heroku, Axios, PSQL, Authentication, Passport, Bcrypt, Javascript, CSS, HTML.",
+		"image": "newspress.png"
+	},
+	{
+		"id": "My Agenda",
+		"github_link": "https://github.com/jdiperi88/MyAgenda",
+		"deployed_link": "https://myagenda8.herokuapp.com/",
+		"description": "Built using rails in the backend and the ERB template engine for server side rendering, My Agenda is an application giving users the ability to create tasks to manage their time more efficiently. Users are able to sign up and save their tasks to their profile, and have full CRUD functionality to modify those tasks.",
+		"technologies_used": "Technologies used: Rails, ERB, Heroku, Active Record, PSQL, Bcrypt, Ruby, Bootstrap, CSS, HTML.",
+		"image": "myagenda.png"
+	}
 ]
