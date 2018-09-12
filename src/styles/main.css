@@ -377,6 +377,9 @@ header {
       text-transform: uppercase;
       cursor: pointer;
       list-style-type: none; }
+      .nav-menu > a li:hover {
+        background: #fff;
+        color: black; }
   .nav-menu > a:not(:last-child) li {
     border-bottom: solid white; }
 
