@@ -626,10 +626,10 @@ footer {
   #project {
     display: block; }
     #project .project-picture {
-      display: block;
       position: relative;
       width: 100%;
-      min-height: auto; }
+      min-height: auto;
+      background-size: auto; }
       #project .project-picture h1 {
         font-size: 3rem; }
     #project .project-list {
