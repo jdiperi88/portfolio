@@ -578,7 +578,8 @@ footer {
   .mobile-hide {
     display: none; }
   #home .main-background {
-    height: 100vh; }
+    height: 100vh;
+    background-position: center; }
   #home .row {
     flex-direction: column; }
     #home .row .aboutColumn {
