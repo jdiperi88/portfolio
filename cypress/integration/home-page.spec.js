@@ -6,7 +6,6 @@ describe("Home Page tests", () => {
       .and("include", "https://www.linkedin.com/in/jdiperi");
     cy.get(".home-linked-in-link").click();
   });
-
   it("should have github in button and link to github in", () => {
     cy.visit("http://localhost:3001/");
     cy.get(".home-github-link")
