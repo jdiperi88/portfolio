@@ -1,78 +1,365 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080808" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="description"
+      content="Joseph DiPeri is a Jacksonville, Florida based DevSecOps engineering manager building AI-driven infrastructure, observability platforms, homelab systems, and polished web apps."
     />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      charset="UTF-8"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    <meta property="og:title" content="Joseph DiPeri | Portfolio" />
+    <meta
+      property="og:description"
+      content="Modern portfolio for Joseph DiPeri: DevSecOps, AI infrastructure, homelab systems, observability, cloud platforms, and selected apps."
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-KJFXSHD");
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jdiperi.com" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Joseph DiPeri | Portfolio</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Joseph DiPeri",
+        "url": "https://jdiperi.com",
+        "sameAs": [
+          "https://github.com/jdiperi88",
+          "https://www.linkedin.com/in/jdiperi"
+        ],
+        "jobTitle": "DevSecOps Engineering Manager",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jacksonville",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        },
+        "knowsAbout": [
+          "DevSecOps",
+          "Kubernetes",
+          "Terraform",
+          "OpenTelemetry",
+          "Agentic Infrastructure",
+          "Homelab Automation",
+          "Cloud Infrastructure",
+          "AI Operations"
+        ]
+      }
     </script>
-    <!-- End Google Tag Manager -->
-    <title>Joseph DiPeri</title>
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-KJFXSHD"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Joseph DiPeri home">JD</a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="/jdiperi_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </nav>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">Jacksonville, FL // AI // DevSecOps // Homelab</p>
+          <h1 id="hero-title">Joseph DiPeri</h1>
+          <p class="hero-role">
+            I build infrastructure, automation, and apps that feel like control panels for real life.
+          </p>
+          <p class="hero-copy">
+            DevSecOps engineering manager by day. Local AI and homelab builder by obsession. I like cloud platforms,
+            observability, source-grounded agents, weird home systems, and user interfaces that make complex work feel
+            sharp instead of heavy.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary home-github-link" href="https://github.com/jdiperi88" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="button secondary home-linked-in-link" href="https://www.linkedin.com/in/jdiperi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button secondary home-resume-link" href="/jdiperi_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Profile summary">
+          <img src="/assets/jdiperi.jpg" alt="Joseph DiPeri" />
+          <div class="status-grid">
+            <div>
+              <span>role</span>
+              <strong>DevSecOps Engineering Manager</strong>
+            </div>
+            <div>
+              <span>base</span>
+              <strong>Jacksonville, Florida</strong>
+            </div>
+            <div>
+              <span>current mode</span>
+              <strong>Agentic infra + homelab systems</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <section id="about" class="about-section">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Full-stack roots. Platform brain. AI lab energy.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            My path went from building client-facing web apps to leading DevOps, platform, observability, security,
+            and infrastructure teams. That mix still shows up in how I work: I care about systems being reliable, but I
+            also care about the interface humans use to understand them.
+          </p>
+          <p>
+            Lately I have been pushing hard into AI-assisted operations: local LLM routing, compiled knowledge wikis,
+            OpenClaw/QMD memory, source ledgers, and automation loops that can help run a home or engineering org
+            without losing the plot.
+          </p>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Career signals">
+        <div>
+          <strong>8+</strong>
+          <span>years building production systems</span>
+        </div>
+        <div>
+          <strong>17</strong>
+          <span>OKR initiatives led at Cayuse</span>
+        </div>
+        <div>
+          <strong>96</strong>
+          <span>platform epics driven</span>
+        </div>
+        <div>
+          <strong>226</strong>
+          <span>runbooks, RCAs, and architecture pages authored</span>
+        </div>
+      </section>
+
+      <section class="focus-grid" aria-label="Focus areas">
+        <article>
+          <span>01</span>
+          <h3>Agentic Infrastructure</h3>
+          <p>Local models, OpenClaw, compiled knowledge systems, AI review queues, and automation that stays grounded in real sources.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>DevSecOps Leadership</h3>
+          <p>AWS, Kubernetes, Terraform, OpenTelemetry, Grafana, CI/CD reliability, compliance evidence, and production incident discipline.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Homelab + Product</h3>
+          <p>Self-hosted GitLab, K3s, Tailscale routing, CouchDB, MinIO, family apps, maker workflows, and polished utilities for daily life.</p>
+        </article>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected apps and systems.</h2>
+          <p>
+            This is the modern version of the old projects page: fewer stale demos, more systems that reflect what I
+            actually build now. Older work stays only where it still tells the story.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <p class="tag">AI / Homelab</p>
+            <h3>Agentic Homelab Platform</h3>
+            <p>
+              Self-hosted GitLab, K3s, nginx/Tailscale routing, CouchDB, MinIO, Prometheus, Grafana, Loki, Alloy,
+              Mac Mini/Studio services, LM Studio, OpenClaw, and operational scripts.
+            </p>
+            <div class="pills">
+              <span>K3s</span>
+              <span>GitLab</span>
+              <span>OpenClaw</span>
+              <span>Grafana</span>
+              <span>LM Studio</span>
+            </div>
+            <a href="https://github.com/jdiperi88/infra-home" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <p class="tag">Grounded AI</p>
+            <h3>SailPoint Interview Assistant</h3>
+            <p>
+              A focused prep app using compiled SailPoint knowledge, seeded source material, transcript notes, and
+              local model routing for grounded answer coaching.
+            </p>
+            <div class="pills">
+              <span>React</span>
+              <span>Vite</span>
+              <span>MUI</span>
+              <span>Local LLMs</span>
+            </div>
+            <a href="https://github.com/jdiperi88/sailpoint-interview-assistant" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <p class="tag">AI Workflow</p>
+            <h3>Job Hunter Automation</h3>
+            <p>
+              Local-first sourcing, fit scoring, Gmail routing, company enrichment, review queues, and source-grounded
+              application package generation.
+            </p>
+            <div class="pills">
+              <span>React 19</span>
+              <span>Node</span>
+              <span>Gmail API</span>
+              <span>ATS</span>
+            </div>
+            <a href="https://github.com/jdiperi88/job-hunter" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <p class="tag">Family Tooling</p>
+            <h3>Sports Coach App</h3>
+            <p>
+              Youth sports notes, video intake, parent-approved growth insights, drill sessions, evidence review, and
+              structured practice plans.
+            </p>
+            <div class="pills">
+              <span>React</span>
+              <span>Vite</span>
+              <span>CouchDB</span>
+              <span>Playwright</span>
+            </div>
+            <a href="https://github.com/jdiperi88/sports-learning-game" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <p class="tag">AI + Family</p>
+            <h3>Maker App</h3>
+            <p>
+              Kid-facing idea capture with model routing, printable concept planning, QA-blocked states, and parent
+              review gates before anything moves toward fabrication.
+            </p>
+            <div class="pills">
+              <span>React</span>
+              <span>MUI</span>
+              <span>CAD Flow</span>
+              <span>Safety Gates</span>
+            </div>
+            <a href="https://github.com/jdiperi88/maker-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <p class="tag">Archive</p>
+            <h3>Early React / Native Work</h3>
+            <p>
+              Mobile Flashcards, Would You Rather, and the original portfolio lineage. Stale Heroku-era app links are
+              removed; useful source history remains.
+            </p>
+            <div class="pills">
+              <span>React</span>
+              <span>Redux</span>
+              <span>React Native</span>
+              <span>Netlify</span>
+            </div>
+            <a href="https://github.com/jdiperi88" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section">
+        <div class="section-heading">
+          <p class="section-kicker">Experience</p>
+          <h2>Modern platform work, without burying the portfolio.</h2>
+        </div>
+        <div class="experience-grid">
+          <article>
+            <span>2023 - Present</span>
+            <h3>Cayuse</h3>
+            <p>DevSecOps Engineering Manager leading platform migration, observability modernization, compliance automation, CI/CD reliability, and high-severity operational work.</p>
+          </article>
+          <article>
+            <span>2022 - 2023</span>
+            <h3>NextRoll</h3>
+            <p>Senior DevOps Engineer improving AWS reliability, Datadog APM coverage, Buildkite automation, quality gates, and critical data performance paths.</p>
+          </article>
+          <article>
+            <span>2019 - 2022</span>
+            <h3>Proclivity Systems</h3>
+            <p>Engineering Manager and Lead DevOps Engineer building Terraform infrastructure, CI/CD automation, release standards, and team delivery systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills" aria-label="Technical skills">
+        <p class="section-kicker">Stack</p>
+        <div>
+          <span>AWS</span>
+          <span>Kubernetes</span>
+          <span>Terraform</span>
+          <span>Helm</span>
+          <span>Docker</span>
+          <span>OpenTelemetry</span>
+          <span>Grafana</span>
+          <span>Prometheus</span>
+          <span>Loki</span>
+          <span>Datadog</span>
+          <span>Buildkite</span>
+          <span>Bitbucket Pipelines</span>
+          <span>Jenkins</span>
+          <span>Python</span>
+          <span>Bash</span>
+          <span>Go</span>
+          <span>JavaScript</span>
+          <span>SQL</span>
+          <span>SOC 2</span>
+          <span>FedRAMP</span>
+          <span>HIPAA</span>
+          <span>Local LLMs</span>
+          <span>Homelab</span>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Want to talk infrastructure, AI ops, or a weird useful app?</h2>
+          <div class="contact-links">
+            <a href="mailto:jdiperi8@gmail.com">jdiperi8@gmail.com</a>
+            <a href="https://www.linkedin.com/in/jdiperi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/jdiperi88" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden-field">
+            <label>Do not fill this out: <input name="bot-field" /></label>
+          </p>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            Subject
+            <input name="subject" type="text" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Joseph DiPeri</span>
+      <span>Jacksonville, FL</span>
+      <span>AI // DevSecOps // Homelab</span>
+    </footer>
   </body>
 </html>

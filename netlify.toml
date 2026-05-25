@@ -1,4 +1,7 @@
-# The following redirect is intended for use with most SPA's that handles routing internally.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

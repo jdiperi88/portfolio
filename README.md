@@ -1,10 +1,31 @@
-# Portfolio
+# Joseph DiPeri Portfolio
 
-## Starting this site
-* Clone the site and run npm install
-* Npm start will start the server
-* npm run watch-css will start watching your sass files for changes.
+Static portfolio site for `jdiperi.com`, deployed by Netlify from GitHub.
 
-## About the site
-* Remade this portfolio in react to make adding projects easier. I created a project component along with an external json file that contains all the project data. I map over this json data and drop all the necessary props into the project component to ease updating the projects page. 
-* I also take advantage of netlifys form submission ability to keep this a strictly static site.
+## Local Development
+
+```bash
+npm install
+npm start
+```
+
+`npm start` builds `public/` into `dist/` and serves the production output at
+`http://localhost:4173`.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Content
+
+- Portfolio page: `public/index.html`
+- Styles: `public/styles.css`
+- Resume PDF: `public/jdiperi_resume.pdf`
+- Public assets: `public/assets/`
+- Netlify publish directory: `dist`
+
+The site intentionally has no runtime dependencies. It replaced the old Create
+React App and Cypress scaffold with a simpler static deploy path while keeping
+the original portfolio shape: about, projects, experience, contact, and resume.
