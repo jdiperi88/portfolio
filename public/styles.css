@@ -248,6 +248,7 @@ nav a:focus-visible {
 .profile-panel img {
   aspect-ratio: 4 / 5;
   border: 1px solid var(--line);
+  height: auto;
   object-fit: cover;
   object-position: center 18%;
   width: 100%;
