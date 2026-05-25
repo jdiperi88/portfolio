@@ -23,9 +23,12 @@ npm run build
 - Portfolio page: `public/index.html`
 - Styles: `public/styles.css`
 - Resume PDF: `public/jdiperi_resume.pdf`
+- Netlify headers: `public/_headers`
+- Search metadata: `public/robots.txt` and `public/sitemap.xml`
 - Public assets: `public/assets/`
 - Netlify publish directory: `dist`
 
 The site intentionally has no runtime dependencies. It replaced the old Create
 React App and Cypress scaffold with a simpler static deploy path while keeping
 the original portfolio shape: about, projects, experience, contact, and resume.
+Broken routes render `public/404.html`; this is a static portfolio, not an SPA.

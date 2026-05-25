@@ -15,6 +15,8 @@ const types = {
   ".json": "application/json; charset=utf-8",
   ".pdf": "application/pdf",
   ".png": "image/png",
+  ".txt": "text/plain; charset=utf-8",
+  ".xml": "application/xml; charset=utf-8",
   ".ttf": "font/ttf"
 };
 
@@ -22,6 +24,7 @@ const server = createServer(async (request, response) => {
   const url = new URL(request.url || "/", `http://localhost:${port}`);
   const cleanPath = normalize(decodeURIComponent(url.pathname)).replace(/^(\.\.[/\\])+/, "");
   let filePath = join(root, cleanPath === "/" ? "index.html" : cleanPath);
+  let statusCode = 200;
 
   try {
     const info = await stat(filePath);
@@ -29,9 +32,11 @@ const server = createServer(async (request, response) => {
       filePath = join(filePath, "index.html");
     }
   } catch {
-    filePath = join(root, "index.html");
+    statusCode = 404;
+    filePath = join(root, "404.html");
   }
 
+  response.statusCode = statusCode;
   response.setHeader("Content-Type", types[extname(filePath)] || "application/octet-stream");
   createReadStream(filePath)
     .on("error", () => {

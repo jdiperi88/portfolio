@@ -374,7 +374,7 @@ nav a:focus-visible {
 .projects-section {
   background:
     linear-gradient(180deg, rgba(8, 8, 8, 0.92), rgba(8, 8, 8, 0.98)),
-    url("/assets/mainBack1.jpg") center / cover fixed;
+    url("/assets/mainBack1.jpg") center / cover;
   border-bottom: 1px solid var(--line);
   border-top: 1px solid var(--line);
 }
@@ -556,6 +556,20 @@ textarea:focus {
   text-transform: uppercase;
 }
 
+.not-found {
+  align-content: center;
+  background:
+    linear-gradient(90deg, rgba(8, 8, 8, 0.94), rgba(8, 8, 8, 0.72)),
+    url("/assets/mainBack1.jpg") center / cover;
+  display: grid;
+  min-height: 100vh;
+  padding: 8vw;
+}
+
+.not-found h1 {
+  margin-bottom: 18px;
+}
+
 @media (max-width: 1080px) {
   .hero,
   .about-section,
@@ -647,5 +661,17 @@ textarea:focus {
     align-items: flex-start;
     flex-direction: column;
     padding: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
   }
 }
