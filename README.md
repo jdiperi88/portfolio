@@ -23,6 +23,7 @@ npm run build
 - Portfolio page: `public/index.html`
 - Styles: `public/styles.css`
 - Resume PDF: `public/jdiperi_resume.pdf`
+- Contact success page: `public/thanks.html`
 - Netlify headers: `public/_headers`
 - Search metadata: `public/robots.txt` and `public/sitemap.xml`
 - Public assets: `public/assets/`

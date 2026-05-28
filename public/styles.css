@@ -557,7 +557,8 @@ textarea:focus {
   text-transform: uppercase;
 }
 
-.not-found {
+.not-found,
+.status-page {
   align-content: center;
   background:
     linear-gradient(90deg, rgba(8, 8, 8, 0.94), rgba(8, 8, 8, 0.72)),
@@ -567,7 +568,8 @@ textarea:focus {
   padding: 8vw;
 }
 
-.not-found h1 {
+.not-found h1,
+.status-page h1 {
   margin-bottom: 18px;
 }
 

@@ -1,6 +1,7 @@
 {
   "short_name": "JDiperi",
   "name": "Joseph DiPeri Portfolio",
+  "description": "DevSecOps, AI infrastructure, homelab systems, and selected apps by Joseph DiPeri.",
   "icons": [
     {
       "src": "favicon.ico",

@@ -96,10 +96,12 @@
         </div>
         <aside class="profile-panel" aria-label="Profile summary">
           <img
-            src="/assets/jdiperi.jpg"
+            src="/assets/jdiperi-profile-900.jpg"
+            srcset="/assets/jdiperi-profile-450.jpg 450w, /assets/jdiperi-profile-900.jpg 900w"
+            sizes="(max-width: 720px) calc(100vw - 82px), (max-width: 1080px) 432px, 352px"
             alt="Joseph DiPeri"
-            width="2629"
-            height="3656"
+            width="900"
+            height="1125"
             decoding="async"
             fetchpriority="high"
           />
@@ -416,7 +418,7 @@
             <a href="https://github.com/jdiperi88" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <p class="hidden-field">
             <label>Do not fill this out: <input name="bot-field" /></label>
